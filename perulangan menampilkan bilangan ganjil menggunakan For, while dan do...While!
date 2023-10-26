@@ -1,0 +1,75 @@
+Buatlah program perulangan menampilkan bilangan ganjil menggunakan For, while dan do...While!
+
+
+ 
+public class BilanganGanjilFor {
+
+
+    public static void main(String[] args) {
+        int i;
+
+
+        for (i = 1; i <= 100; i++) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+public class BilanganGanjilWhile {
+
+
+    public static void main(String[] args) {
+        int i = 1;
+
+
+        while (i <= 100) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+            i++;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+public class BilanganGanjilDoWhile {
+
+
+    public static void main(String[] args) {
+        int i = 1;
+
+
+        do {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+            i++;
+        } while (i <= 100);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
