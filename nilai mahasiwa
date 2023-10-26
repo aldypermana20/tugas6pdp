@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class nilaimahasiwa {
+
+    public static void main(String[] args) {
+        
+        int jumlahData;
+        int[] nilai;
+        float rataRata;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukan data yang anda inginkan: ");
+        jumlahData = input.nextInt();
+
+        nilai = new int[jumlahData];
+
+        for (int i = 0; i < jumlahData; i++) {
+            System.out.print("Nilai matakuliah ke-" + (i + 1) + ": ");
+            nilai[i] = input.nextInt();
+        }
+
+        rataRata = 0;
+        for (int i = 0; i < jumlahData; i++) {
+            rataRata += nilai[i];
+        }
+        rataRata /= jumlahData;
+
+        System.out.println("Rata-rata nilai adalah " + rataRata);
+    }
+}
