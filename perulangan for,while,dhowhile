@@ -1,0 +1,103 @@
+import java.util.Scanner;
+
+
+public class programfor {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.print("Masukkan kata: ");
+        String kata = input.nextLine();
+
+
+        System.out.print("Berapa kali ingin mengulang kata? ");
+        int jumlahUlang = input.nextInt();
+
+
+        for (int i = 0; i < jumlahUlang; i++) {
+            System.out.println(kata);
+        }
+
+
+        input.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+
+public class programwhile {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.print("Masukkan kata: ");
+        String kata = input.nextLine();
+
+
+        System.out.print("Berapa kali ingin mengulang kata? ");
+        int jumlahUlang = input.nextInt();
+
+
+        int count = 0;
+        while (count < jumlahUlang) {
+            System.out.println(kata);
+            count++;
+        }
+
+
+        input.close();
+    }
+}
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+
+public class programdowhile {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.print("Masukkan kata: ");
+        String kata = input.nextLine();
+
+
+        System.out.print("Berapa kali ingin mengulang kata? ");
+        int jumlahUlang = input.nextInt();
+
+
+        int count = 0;
+        do {
+            System.out.println(kata);
+            count++;
+        } while (count < jumlahUlang);
+
+
+        input.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
